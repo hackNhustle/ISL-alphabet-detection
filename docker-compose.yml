@@ -1,0 +1,8 @@
+services:
+  alphabet-service:
+    build: .
+    ports:
+      - "8003:8003"
+    environment:
+      - TF_CPP_MIN_LOG_LEVEL=2
+    restart: always
